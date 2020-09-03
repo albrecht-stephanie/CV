@@ -28,7 +28,7 @@ $(document).ready(function() {
         // -------------------------------------------------------------
         // More skill
         // -------------------------------------------------------------
-        $('.more-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+        $('#skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
             if (visible) {
                 percent = jQuery(this.el).attr('data-percent');
                 $('.chart').easyPieChart({
